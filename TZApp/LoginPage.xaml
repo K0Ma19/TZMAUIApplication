@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TZApp.LoginPage"
+             Title="LoginPage">
+
+    <Grid>
+
+        <StackLayout Orientation ="Vertical">
+            <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="login" Placeholder="Login" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="10,0,20,0" TextChanged="login_TextChanged"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="password" Placeholder="Password" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="10,0,20,0" TextChanged="password_TextChanged"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="sendRequest" Text="Log in" BackgroundColor="CadetBlue" Margin="0,15,0,0" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Clicked="sendRequest_Clicked"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
